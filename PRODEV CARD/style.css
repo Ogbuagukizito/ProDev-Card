@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.card-container-top{
+    display: flex;
+    width: 100vw;
+    height: 400px;
+    background-color: blue;
+    justify-content: space-between;
+    
+}
+
+.card1{
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: minmax(100%, 1fr);
+    grid-template-areas: "stack";
+    overflow: hidden;
+    position: relative;
+    top: 10%;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+}
+
+
+.card1 img{
+    grid-area: stack;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card1 figcaption{
+    grid-area: stack;
+    padding: 8px 20px;
+    background-color: green;
+    transform: translateY(calc(150% - 14rem));
+    transition: transform 600ms;
+}
+
+p{
+    color: black;
+    line-height: 2rem;
+}
+
+h3{
+    height: 5rem;
+    color: #ffa800;
+}
+
+.card1:hover figcaption{
+    transform: none;
+}
+
+
+.card-container-bottom{
+    display: flex;
+    width: 100vw;
+    height: 400px;
+    background-color: yellow;
+    justify-content: space-between;
+    
+}
+
+.card2{
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: minmax(100%, 1fr);
+    grid-template-areas: "stack";
+    overflow: hidden;
+    position: relative;
+    top: 10%;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 10px;
+}
+
+
+.card2 img{
+    grid-area: stack;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card2 figcaption{
+    grid-area: stack;
+    padding: 8px 20px;
+    background-color: green;
+    transform: translateY(calc(150% - 14rem));
+    transition: transform 600ms;
+}
+
+.card2:hover figcaption{
+    transform: none;
+}
+
+@media screen and (max-width: 800px){
+    
+}
